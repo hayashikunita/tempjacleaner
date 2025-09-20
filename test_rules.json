@@ -1,0 +1,3 @@
+﻿[
+	{"pattern": "テスト誤字", "message": "外部ルール検出", "suggestion": "テスト語", "severity": "INFO"}
+]

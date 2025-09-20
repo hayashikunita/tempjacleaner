@@ -1,0 +1,23 @@
+[
+  {"pattern": "(必須条件|過半数の半分|新規に新たな)", "message": "重複/冗長表現の可能性", "severity": "WARN"},
+  {"pattern": "(非常に|とても|すごく|かなり|大変|めちゃくちゃ)", "message": "強調表現の使用（多用に注意）", "severity": "INFO"},
+  {"pattern": "(とか|っぽい|みたい|じゃね|だよね|ですかね)", "message": "口語表現（ビジネス文書では避ける）", "severity": "WARN"},
+  {"pattern": "\\b(笑|w{2,})\\b", "message": "カジュアルな笑い表現（w/笑）", "severity": "WARN"},
+  {"pattern": "[!！?？]{3,}", "message": "感嘆・疑問符の過剰", "severity": "WARN"},
+  {"pattern": "[。]\\s*[、]", "message": "句点直後の読点（句読点の混在）", "severity": "WARN"},
+
+  {"pattern": "お世話になっております。?\\s*\\S+です。?", "message": "挨拶の簡素化を検討（文脈次第）", "severity": "INFO"},
+
+  {"pattern": "することが可能", "message": "冗長表現『することが可能』→『できます』を推奨", "suggestion": "できます", "severity": "WARN"},
+  {"pattern": "ご確認のほどよろしくお願いいたします", "message": "定型句の簡素化『ご確認ください』を推奨", "suggestion": "ご確認ください", "severity": "INFO"},
+  {"pattern": "いかがでしたでしょうか", "message": "冗長な疑問表現→『いかがでしたか』を推奨", "suggestion": "いかがでしたか", "severity": "INFO"},
+  {"pattern": "という風に", "message": "表記統一『というふうに』を推奨", "suggestion": "というふうに", "severity": "INFO"},
+  {"pattern": "(等など|など等)", "message": "重複表現→『など』に統一を推奨", "suggestion": "など", "severity": "WARN"},
+  {"pattern": "ご苦労様です", "message": "目上への挨拶NG→『お疲れ様です』を推奨", "suggestion": "お疲れ様です", "severity": "WARN"},
+
+  {"pattern": "(?<!ご)教えてください", "message": "依頼表現の丁寧化、『ご教示ください/ご教授ください』を検討", "severity": "INFO"},
+  {"pattern": "お手数(ですが|ですが、)", "message": "定型句の簡素化を検討（冗長になりがち）", "severity": "INFO"},
+  {"pattern": "ご対応(のほど)?よろしくお願いいたします", "message": "定型句の簡素化『ご対応ください』を推奨", "suggestion": "ご対応ください", "severity": "INFO"},
+
+  {"pattern": "(ね|よ|かな)[。】》)]?$", "message": "終助詞の使用（口語調）", "severity": "INFO"}
+]

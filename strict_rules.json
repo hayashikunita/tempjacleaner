@@ -1,0 +1,12 @@
+[
+  {"pattern": "[ぁぃぅぇぉゃゅょっ]{2,}", "message": "小書き文字の連続（強調表現）を避ける", "severity": "INFO"},
+  {"pattern": "w{3,}", "message": "ネットスラングの過度な 'w' を避ける", "severity": "INFO"},
+  {"pattern": "(笑){2,}", "message": "『笑』の連続使用を避ける", "severity": "INFO"},
+  {"pattern": "[!！?？]{3,}", "message": "感嘆・疑問符の過度な連続", "severity": "WARN"},
+  {"pattern": "[。]\\s*[、]", "message": "句点の直後に読点（句読点の混在順序）", "severity": "WARN"},
+  {"pattern": "\\b(ですかね|じゃないですかね|じゃね|だよね)\\b", "message": "口語的な言い回し（文体統一を検討）", "severity": "INFO"},
+  {"pattern": "(させていただき|させて頂き){2,}", "message": "『させていただき』の連続・多用", "severity": "WARN"},
+  {"pattern": "(お|ご)[\u3040-\u30FF]+(させ|致し|いたし)[\u3040-\u30FF]*", "message": "二重敬語/過剰敬語の可能性", "severity": "INFO"},
+  {"pattern": "\\b(行か|食べ)れる\\b", "message": "ら抜き言葉の可能性", "severity": "WARN"},
+  {"pattern": "多分|たぶん", "message": "曖昧な表現『多分/たぶん』の使用", "severity": "INFO"}
+]

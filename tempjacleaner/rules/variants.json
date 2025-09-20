@@ -1,0 +1,14 @@
+[
+  { "pattern": "(連絡致します|ご連絡致します)", "message": "『いたします』へ統一を推奨", "suggestion": "ご連絡いたします", "severity": "WARN" },
+  { "pattern": "御社|貴社", "message": "社外向けは『貴社』、口頭/社内向けは『御社』—文脈で統一", "severity": "INFO" },
+  { "pattern": "資料(をご)?御送付", "message": "『ご送付』へ統一を推奨", "suggestion": "資料をご送付", "severity": "INFO" },
+  { "pattern": "送付致します", "message": "『送付いたします』へ統一を推奨", "suggestion": "送付いたします", "severity": "WARN" },
+  { "pattern": "お世話様です", "message": "ビジネス挨拶は『お世話になっております』へ統一を推奨", "suggestion": "お世話になっております", "severity": "INFO" },
+  { "pattern": "宜しくお願い致します", "message": "『よろしくお願いいたします』へ統一を推奨", "suggestion": "よろしくお願いいたします", "severity": "WARN" },
+  { "pattern": "申し訳御座いません|申し訳ございません", "message": "ひらがな/漢字の統一（『申し訳ありません』など）", "severity": "INFO" },
+  { "pattern": "とても|非常に|大変|かなり", "message": "強調副詞は控えめに（繰り返しは別途検出）", "severity": "INFO" },
+  { "pattern": "ご教授ください", "message": "文脈により『ご教示ください』が適切", "suggestion": "ご教示ください", "severity": "INFO" },
+  { "pattern": "ご了承下さい|ご了承ください", "message": "『ご了承ください』へ統一（漢字ひらがな）", "suggestion": "ご了承ください", "severity": "INFO" },
+  { "pattern": "御見積|お見積り|お見積もり", "message": "『見積もり』への統一を検討（文脈次第で敬語許容）", "severity": "INFO" },
+  { "pattern": "取り急ぎ", "message": "略式表現。文脈により『取り急ぎご連絡まで』→簡潔に", "severity": "INFO" }
+]

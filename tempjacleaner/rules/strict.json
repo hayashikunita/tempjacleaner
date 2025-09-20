@@ -1,0 +1,37 @@
+[
+  {"pattern": "[\u30fb\uff65]{2,}", "message": "中黒の連続は避けてください", "suggestion": "・", "severity": "WARN"},
+  {"pattern": "[!！?？]{3,}", "message": "感嘆符/疑問符の過剰使用", "suggestion": "！", "severity": "WARN"},
+  {"pattern": "[。、]{2,}", "message": "句読点の連続", "suggestion": "。", "severity": "WARN"},
+  {"pattern": "\u3000+", "message": "全角スペースの禁止", "suggestion": " ", "severity": "ERROR"},
+  {"pattern": "(笑){2,}", "message": "『笑』の多用は避ける", "suggestion": "笑", "severity": "WARN"},
+  {"pattern": "(w){2,}", "message": "『w』の多用は避ける", "suggestion": "w", "severity": "WARN"},
+  {"pattern": "[\uD83C-\uDBFF\uDC00-\uDFFF]+", "message": "絵文字の使用を避ける（ビジネス文書）", "severity": "ERROR"},
+  {"pattern": "(とか|っぽい|みたい|だよね|じゃね|ですかね)", "message": "口語的な表現は避ける（厳格モード）", "severity": "WARN"},
+  {"pattern": "(ね|よ|かな)[。】》)]?$", "message": "終助詞の使用（口語調）", "severity": "WARN"},
+  {"pattern": "ご確認のほどよろしくお願いいたします", "message": "冗長な敬語表現は簡潔に", "suggestion": "ご確認ください", "severity": "WARN"},
+  {"pattern": "することが可能", "message": "冗長な表現", "suggestion": "できます", "severity": "WARN"},
+  {"pattern": "等など|など等", "message": "重複表現の統一", "suggestion": "など", "severity": "WARN"},
+  {"pattern": "(?:^|\\s)[A-Za-z0-9_]{20,}(?:$|\\s)", "message": "非常に長い識別子/トークンは本文から分離", "severity": "INFO"},
+
+  {"pattern": "(非常に|とても|すごく|かなり|大変|めちゃくちゃ)", "message": "強調表現は禁止（厳格）", "severity": "ERROR"},
+
+  {"pattern": "お伺いさせていただく", "message": "二重敬語の可能性", "suggestion": "伺う", "severity": "WARN"},
+  {"pattern": "ご連絡させていただく", "message": "二重敬語の可能性", "suggestion": "ご連絡いたします", "severity": "WARN"},
+  {"pattern": "拝見させていただく", "message": "二重敬語の可能性", "suggestion": "拝見する", "severity": "WARN"},
+  {"pattern": "ご覧になられる", "message": "二重敬語の可能性", "suggestion": "ご覧になる", "severity": "WARN"},
+  {"pattern": "お越しになられる", "message": "二重敬語の可能性", "suggestion": "お越しになる", "severity": "WARN"},
+  {"pattern": "行かせていただきます", "message": "『〜させていただく』多用/二重敬語の可能性", "suggestion": "参ります/行きます", "severity": "INFO"},
+  {"pattern": "説明させていただく", "message": "『〜させていただく』多用/二重敬語の可能性", "suggestion": "説明いたします/説明します", "severity": "INFO"},
+  {"pattern": "拝見いたします", "message": "謙譲+丁寧の冗長の可能性", "suggestion": "拝見します", "severity": "INFO"},
+
+  {"pattern": "アジェンダ", "message": "カタカナ語の使用（『議題』を推奨）", "suggestion": "議題", "severity": "INFO"},
+  {"pattern": "アサイン", "message": "カタカナ語の使用（『割り当て』を推奨）", "suggestion": "割り当て", "severity": "INFO"},
+  {"pattern": "コンセンサス", "message": "カタカナ語の使用（『合意』を推奨）", "suggestion": "合意", "severity": "INFO"},
+  {"pattern": "コミット(?!メント)", "message": "カタカナ語の使用（文脈により『約束/責任を持つ』など）", "severity": "INFO"},
+  {"pattern": "コミットメント", "message": "カタカナ語の使用（『責任/約束』を推奨）", "suggestion": "責任", "severity": "INFO"},
+  {"pattern": "バッファ", "message": "カタカナ語の使用（『余裕』を推奨）", "suggestion": "余裕", "severity": "INFO"},
+  {"pattern": "エビデンス", "message": "カタカナ語の使用（『証拠』を推奨）", "suggestion": "証拠", "severity": "INFO"},
+  {"pattern": "スキーム", "message": "カタカナ語の使用（『枠組み』を推奨）", "suggestion": "枠組み", "severity": "INFO"},
+  {"pattern": "リスケ", "message": "カタカナ語の使用（『再調整/再日程』を推奨）", "suggestion": "再調整", "severity": "INFO"},
+  {"pattern": "ペンディング", "message": "カタカナ語の使用（『保留』を推奨）", "suggestion": "保留", "severity": "INFO"}
+]
